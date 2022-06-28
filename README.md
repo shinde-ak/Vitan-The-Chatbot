@@ -8,4 +8,4 @@ chatbot, able to respond to their concerns with information about University, bo
 courses are on offer
 
 <h1> interface</h1>
-<img src="/interface.jpg" alt="Vitian"/>
+<img src="/interface.JPG" alt="Vitian"/>
