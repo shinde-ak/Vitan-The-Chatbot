@@ -1,0 +1,331 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can tell you about the VIT,chennai campus,different courses in VIT "],
+         "context": [""]
+        },
+        {"tag": "NAME",
+         "patterns": ["What is your name ?", "tell me your name", "Do you have a name? " ],
+         "responses": ["My name is VITian"],
+         "context": [""]
+        },
+        {"tag": "Branches",
+         "patterns": ["what branches VIT,Chennai have?", "Name different branches?", "Student branch ?", "I want to see branches" ],
+         "responses": ["Branches are B.tech Cse,Mechanical,EEE,ECE"],
+         "context": [""]
+        },
+        {"tag": "Student_search",
+         "patterns": ["I want to search for student result history", "Result of student ", "Load result", "Show  results for student", "Find  results by Reg.No" ],
+         "responses": ["Please provide Reg.no ", "Reg.No?"],
+         "context": [""]
+        },
+        {"tag": "results",
+         "patterns": ["19BAI1162 -akash shinde","19BAI1152-Mohit.N","19BAI","19bai","result bai"],
+         "responses": ["Loading result for student result:- 19BAI1162:pass ,19BAI1152:pass"],
+         "context": [""]
+        },
+        {"tag": "student_search",
+         "patterns": ["Find student", "Find Reg_no", "List of student", "student", "Search " ],
+         "responses": ["Please provide  name and registration number"],
+         "context": ["search_by_name"]
+        },
+        {"tag": "search_by_name",
+         "patterns": [],
+         "responses": ["Loading student details"],
+         "context": [""]
+        },
+        {"tag": "campus_search",
+         "patterns": ["Where is  A block", "Where is B block", "Where is C block", "Where is AB block", "Where ishospital " ],
+         "responses": [" location Loading...."],
+         "context": ["search_by_name"]
+        },
+ 		{"tag": "student_search",
+         "patterns": ["19BAI1162-akash shinde", "Mohit N", "akash shinde", "bai", "BAI" ],
+         "responses": ["Please provide campus name or location"],
+         "context": ["search_by_name"]
+        },
+        {"tag": "search_by_name",
+         "patterns": [],
+         "responses": ["Please provide type"],
+         "context": ["search_by_type"]
+        },
+        {"tag": "search_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        },
+		{"tag": "new_branch",
+		"patterns":["what are newly added branches are there","new breanches"],
+		"responses":[""],
+		"context": [""]
+		},
+	{"tag": "course",
+	"patterns":["how many courses are there","no of courses","courses"],
+	"responses":["there are lot of courses under core courses and varies according to branch"],
+	"context": [""]
+	},
+	{"tag": "classes",
+	"patterns":["how much classes are there","number of class rooms","classrooms"],
+	"responses":["there are lot many classes with two 5 floor acedamic buildings,consisting of labs"],
+	"context": [""]
+	},
+	{"tag": "credits",
+	"patterns":["how many credits can student gain","number of credits","credits"],
+	"responses":["student can gain 160 credit for his whole graduation"],
+	"context": [""]
+	},
+	{"tag": "slot",
+	"patterns":["how many slot are there for day","number of slots"],
+	"responses":["there are 11 slots per day"],
+	"context": [""]
+	},
+	{"tag": "holiday",
+	"patterns":["how many holiday student can get in a week","holidays"],
+	"responses":["student can get holiday for 2 days in a week"],
+	"context": [""]
+	},
+	{"tag": "holiday",
+	"patterns":["which days are holiday","hoildays"],
+	"responses":["saturaday,sunday"],
+	"context": [""]
+	},
+	{"tag": "fees",
+	"patterns":["what is the fee for 1 year","fees"],
+	"responses":["2 lakh ruppes for one year"],
+	"context": [""]
+	},
+	{"tag": "course_fees",
+	"patterns":["fees for 1 course"],
+	"responses":["10 thousand rupees"],
+	"context": [""]
+	},
+	{"tag": "credit_course",
+	"patterns":["how many credits for core subjects","core subject credit"],
+	"responses":["60 credits for core subject"],
+	"context": [""]
+	},
+	{"tag": "c_c",
+	"patterns":["how many credit for other subjects","other credits"],
+	"responses":["student can gain total 160 credit and he can gain 100 for other than core courses"],
+	"context": [""]
+	},
+	{"tag": "management",
+	"patterns":["who is the head of VIT","head"],
+	"responses":["Dr Sekar Vishwanathan"],
+	"context": [""]
+	},
+	{"tag": "main",
+	"patterns":["how many branches are there of VIT"],
+	"responses":["4 branches are ther of VIT in India"],
+	"context": [""]
+	},
+	{"tag": "Hostel_Blocks",
+	"patterns": ["what are the hostel bocks","Hostel Blocks"],
+	"responses": ["A Block, B Block, C Block "],
+	"context":[""]
+	},
+
+
+	{"tag": "Types_of_Rooms",
+	"patterns":["what are the types of rooms", "Rooms"],
+	"responses": ["2 Bed AC,3 Bed AC,4 Bed AC 2 Bed Non AC,3 Bed Non AC,4 Bed Non AC"],
+	"context":[""]
+	},
+
+
+	{"tag": "Types_of_Mess",
+	"patterns":["what are the types of Mess", "Mess"],
+	"responses": ["Veg mess, Nonveg mess, Special mess"],
+	"context":[""]
+	},
+
+
+	{"tag": "Boys_and_girls_hostel",
+	"patterns":["Which is boys hostel and girls hostel?", "Boys Girls hostel"],
+	"responses": ["Boys Hostel A Block , C Block  Girls Hostel B Block"],
+	"context":[""]
+	},
+
+
+	{"tag": "Warden",
+	"patterns":["Who are the wardens of A B C Blocks?", "Warden"],
+	"responses": ["Mr Joseph A Block, Mrs Hema B Block Mr.Nagamuthu C Block "],
+	"context":[""]
+	},
+
+
+	{"tag": "Luggage_storage",
+	"patterns":["What about luggage storage", "Luggage storage"],
+	"responses": ["Cupboards with a provision for locking will be provided"],
+	"context":[""]
+	},
+
+
+	{"tag": "Beds",
+	"patterns":["What types of bed are available?", "Bed Types"],
+	"responses": ["Bunker Bed and Normal Bed"],
+	"context":[""]
+	},
+
+
+	{"tag": "Hostel_Timings",
+	"patterns":["What are the timings for hostel", "Timings"],
+	"responses": ["Boys 900pm , Girls 730pm"],
+	"context":[""]
+	},
+
+
+	{"tag": "Facilities_for_moving",
+	"patterns":["Are there elevators", "Staircase Elevator"],
+	"responses": ["Both Staircases and Elevators are available in all Blocks"],
+	"context":[""]
+	},
+
+
+	{"tag": "Mess_Fee",
+	"patterns":["What about the mess fee?", "Mess Fee"],
+	"responses": ["Veg mess Rs.24000, Non veg mess Rs50000, Special Mess Rs75000"],
+	"context":[""]
+	},
+
+	{"tag": "extracurricular_activities",
+	"patterns": ["what are the extracurricular activities offered", "What are the clubs offered"],
+	"responses": ["Clubs chapters teams Select category for information"],
+	"context":[""]
+	},
+
+	{"tag": "Clubs",
+	"patterns":["what are the clubs in vit Chennai", "what kind of clubs are offered in vit Chennai", "Clubs"],
+	"responses": ["Arts and cultural clubs, technical clubs, social clubs select a category"],
+	"context":[""]
+	},
+
+	{"tag":"types_of_clubs_arts",
+	"patterns": ["what kind of art and cultural clubs are there in vit Chennai?","what kind of art and cultural clubs are offered in vit Chennai?", "art and cultural clubs"],
+	"responses": ["Event management club, Dance club VITCC, Debate society, Dramatics club, English Literary club, music club, Photography club, Quiz club, Fine arts club, Arignar Anna Tamil Mandram, Designers club, Yoga club"],
+	"context":[""]
+	},
+
+	{"tag":"types_of_clubs_social",
+	"patterns":["what kind of social clubs are there in vit Chennai?", "what kind of social clubs are offered in vit Chennai?", "social clubs"],
+	"responses":["Vit Nen Club, Uddeshya vit Chennai, women’s development club, youth red cross, health club, youth red cross, health club, VITeach, Rotaract club, NSS."],
+	"context":[""]
+	},
+
+	{"tag":"types_of_clubs_Technical",
+	"patterns":["what kind of technical are there in vit Chennai?","what kind of Technical clubs are offered in vit Chennai?", "technical clubs"],
+	"responses":["android club, CIVITEK, Code Y Gen, Linux club, Robotics club, EUREKA!"],
+	"context":[""]
+	},
+
+	{"tag":"chapters",
+	"patterns":["What are the student chapters in vit?","student chapters"],
+	"responses":["IET VIT on campus, Association For Computing Machinery , ENFUSE VIT Student, Owasp Vit Chennai Student Chapter, SPIE, OSA VIT Chennai Student Chapter, IEEE Photonics Society"],
+	"context":[""]
+	},
+
+	{"tag": "Team",
+	"patterns":["what student teams are there in vit Chennai?", "teams, student teams"],
+	"responses":[" The road runners, Zuura, Shaurya, Velociraptor, Formula electric, Robotics team, Team Saksham International, Team Avaitors International."],
+	"context":[""]
+	},
+
+	{"tag": "faq1",
+	"patterns": ["Can I join multiple clubs? How many clubs can I join?"],
+	"responses":["Any number of clubs.As long you can manage the workload and contribute effectively"],
+	"context":[""]
+	},
+
+	{"tag":"faq2",
+	"patterns":["Which year can I join in clubs?","Which sem can I join clubs?","can I join in a club in 1st year?"],
+	"responses":["Students can join in club from 1st year It is considered for credits in 4th semester or later"],
+	"context":[""]
+	},
+
+	{"tag": "faq3",
+	"patterns":["how many credits can I earn for club?"],
+	"responses":["2 Credits"],
+	"context":[""]
+	},
+
+	{"tag":"faq4",
+	"patterns":["Can I get more credits if I join multiple credits?"],
+	"responses":["Students are rewarded only 2 credits for completing extracurricular course"],
+	"context":[""]
+	},
+
+	{"tag":"faq5",
+	"patterns":["Is joining a club mandatory?"],
+	"responses":["Student should complete the extracurricular course of 2 credits to complete the degree"],
+	"context":[""]
+	},
+
+	{"tag":"faq6",
+	"patterns":["Can I start a new club?"],
+	"responses":["students can start a new club chapter after getting permission from Student Welfare Office"],
+	"context":[""]
+	},
+
+	{"tag": "faq7",
+	"patterns":[" What is the eligibility for clubs?"],
+	"responses": ["Any student of vit Chennai can join clubs"],
+	"context":[""]
+	},
+
+	{"tag":"faq8",
+	"patterns":["Why should I join in a club?"],
+	"responses":["to learn and develop leadership skills such as decision making,problem solving,delegating and organizing to get skills and experiences that will round out your resume (for the CCM graduate, a record of involvement in campus life is of proven interest to employersand to the colleges to which you might transfer to meet new people and have new experiences"],
+	"context":[""]
+	},
+
+	{"tag":"faq9",
+	"patterns":["Should I re-register for clubs every semester?"],
+	"responses":["Volunteers do not need to register FFCS members registration lasts for the duration of one semester"],
+	"context":[""]
+	},
+
+	{"tag":"faq10",
+	"patterns":["where should I register for clubs?"],
+	"responses":["FFCS"],
+	"context":[""]
+	},
+
+	{"tag":"faq11",
+	"patterns":["Can I quit a club?"],
+	"responses":["Yes"],
+	"context":[""]
+	},
+
+	{"tag":"faq12",
+	"patterns":["do students fail in extracurricular course?"],
+	"responses": ["In case the club heads feel a student has not contributed effectively, they will not pass"],
+	"context":[""]
+	},
+
+	{"tag":"faq13",
+	"patterns":["are marks awarded for club?"],
+	"responses":[" FFCS members get pass fail result"],
+	"context":[""]
+	}
+   ]
+}
